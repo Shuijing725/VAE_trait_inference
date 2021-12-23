@@ -1,0 +1,11 @@
+data/
+.idea/
+
+*.pyc 
+*__pycache__*
+
+# file from macos
+.DS_Store
+
+# python file
+wxpusher.py

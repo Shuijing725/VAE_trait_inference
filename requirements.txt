@@ -1,0 +1,7 @@
+numpy
+pandas
+gym
+tensorflow
+cmake
+matplotlib
+shapely

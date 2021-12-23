@@ -1,0 +1,4 @@
+2021-12-21 09:29:05, INFO: Create other envs with new settings
+2021-12-21 09:48:16, INFO: Testing success rate: 0.91, collision rate: 0.07, timeout rate: 0.03, nav time: 19.84
+2021-12-21 09:48:16, INFO: Collision cases: 5 6 23 43 86 111 137 163 167 178 186 187 188 216 222 228 230 234 251 278 279 283 306 328 378 383 384 406 408 421 423 486 497
+2021-12-21 09:48:16, INFO: Timeout cases: 4 33 52 65 66 148 204 233 266 297 393 453 455
