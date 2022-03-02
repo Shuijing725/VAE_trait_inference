@@ -1,5 +1,5 @@
 # VAE Trait Inference
-This repository contains the codes for our paper titled "Learning to Navigate Intersections with Unsupervised Driver Trait Inference". 
+This repository contains the codes for our paper titled "Learning to Navigate Intersections with Unsupervised Driver Trait Inference" in ICRA 2022. 
 For more details, please refer to the [project website](https://sites.google.com/illinois.edu/vae-trait-inference/home) and 
 [arXiv preprint](https://arxiv.org/abs/2109.06783).
 For experiment demonstrations, please refer to the [youtube video](https://www.youtube.com/watch?v=wqbgsjSvkAo).
@@ -126,12 +126,11 @@ Optionally, you can plot the training curves by running the following:
 ## Citation
 If you find the code or the paper useful for your research, please cite our paper:
 ```
-@misc{liu2021learning,
+@inproceedings{liu2021learning,
   title={Learning to Navigate Intersections with Unsupervised Driver Trait Inference},
   author={Liu, Shuijing and Chang, Peixin and Chen, Haonan and Chakraborty, Neeloy and Driggs-Campbell, Katherine},
-  howpublished = {\url{https://arxiv.org/abs/2109.06783}},
-  note = {arXiv preprint},
-  year={2021}
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2022}
 }
 ```
 
