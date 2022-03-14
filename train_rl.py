@@ -216,27 +216,21 @@ def main():
 		if j % config.training.log_interval == 0 and len(episode_rewards) > 1:
 			total_num_steps = (j + 1) * config.training.num_processes * config.ppo.num_steps
 			end = time.time()
-			# log the intent prediction accuracy if we are running inference on prediction model
-			# if config.env_config.ob_space.true_human_intent == 'inferred':
-			# 	avg_accuracy = np.mean(envs.accuracy_list)
-			# 	envs.accuracy_list.clear()
-			# else:
-			# 	avg_accuracy = 0.
-			avg_accuracy = 0.
+
 
 			print(
 				"Updates {}, num timesteps {}, FPS {} \n Last {} training episodes: mean/median reward "
-				"{:.1f}/{:.1f}, min/max reward {:.1f}/{:.1f}, latent state inference accuracy {:.4f}\n"
+				"{:.1f}/{:.1f}, min/max reward {:.1f}/{:.1f}\n"
 					.format(j, total_num_steps,
 							int(total_num_steps / (end - start)),
 							len(episode_rewards), np.mean(episode_rewards),
 							np.median(episode_rewards), np.min(episode_rewards),
-							np.max(episode_rewards), avg_accuracy))
+							np.max(episode_rewards)))
 
 			df = pd.DataFrame({'misc/nupdates': [j], 'misc/total_timesteps': [total_num_steps],
 							   'fps': int(total_num_steps / (end - start)), 'eprewmean': [np.mean(episode_rewards)],
 							   'loss/policy_entropy': dist_entropy, 'loss/policy_loss': action_loss,
-							   'loss/value_loss': value_loss, 'pred_accuracy': avg_accuracy})
+							   'loss/value_loss': value_loss})
 
 			if os.path.exists(os.path.join(config.training.output_dir, 'progress.csv')) and j > 20:
 				df.to_csv(os.path.join(config.training.output_dir, 'progress.csv'), mode='a', header=False, index=False)

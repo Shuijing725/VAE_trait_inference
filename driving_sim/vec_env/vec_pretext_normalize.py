@@ -25,8 +25,6 @@ class VecPretextNormalize(VecEnvWrapper):
         self.pred_model = None
         self.pred_model_hidden_states=None
 
-        self.accuracy_list = [] # to save the prediction accuracy during training in csv
-
         self.step_counter = None
         # update prediction every num_steps steps
         self.pred_period = config.pretext.num_steps
