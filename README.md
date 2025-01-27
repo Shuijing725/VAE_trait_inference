@@ -1,6 +1,6 @@
 # VAE Trait Inference
 This repository contains the codes for our paper titled "Learning to Navigate Intersections with Unsupervised Driver Trait Inference" in ICRA 2022.  
-[[Website]](https://sites.google.com/view/vae-trait-inference/home) [[arXiv]](https://arxiv.org/abs/2109.06783) [[Demo video]](https://youtu.be/wqbgsjSvkAo) [[Presentation video]](https://youtu.be/hfSlciB1jew) [Paper](https://ieeexplore.ieee.org/document/9811635) 
+[[Website]](https://sites.google.com/view/vae-trait-inference/home) [[arXiv]](https://arxiv.org/abs/2109.06783) [[Demo video]](https://youtu.be/wqbgsjSvkAo) [[Presentation video]](https://youtu.be/hfSlciB1jew) [[Paper]](https://ieeexplore.ieee.org/document/9811635) 
 
 
 ## Abstract
